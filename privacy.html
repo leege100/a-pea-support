@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Information | a Pea</title>
+    <style>
+        :root {
+            --brand-color: #5EA74D;
+            --text-main: #1d1d1f;
+            --text-sec: #424245;
+            --bg-color: #ffffff;
+            --card-bg: #f5f5f7;
+            --line-color: #d2d2d7;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-main: #f5f5f7;
+                --text-sec: #a1a1a6;
+                --bg-color: #000000;
+                --card-bg: #1c1c1e;
+                --line-color: #38383a;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
+
+        header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .app-name {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--brand-color);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin: 0;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            color: var(--text-sec);
+            margin-top: 12px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 60px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--line-color);
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p, li {
+            font-size: 16px;
+            color: var(--text-sec);
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 24px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        .highlight-box {
+            background-color: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+        }
+
+        .contact-link {
+            color: var(--brand-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid var(--line-color);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-sec);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 32px; }
+            .container { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="app-name">a Pea</span>
+        <h1>Legal Information</h1>
+        <p class="last-updated">Last Updated: March 31, 2026</p>
+    </header>
+
+    <section id="privacy">
+        <h2>1. Privacy Policy</h2>
+        
+        <h3>Our Philosophy: Privacy by Design</h3>
+        <p><strong>a Pea</strong> is built on a "Privacy-First" foundation. We believe your tasks, thoughts, and focus habits are sacred. We do not want, and technically cannot access, your personal information.</p>
+
+        <div class="highlight-box">
+            <h3>Data Storage & Collection</h3>
+            <ul>
+                <li><strong>Local-Only Storage:</strong> All task content, "Pea" progress, and focus logs are stored <strong>strictly on your local device</strong>.</li>
+                <li><strong>No Cloud Databases:</strong> We do not use any cloud services (such as Firebase or Supabase) to sync, store, or backup your personal data.</li>
+                <li><strong>No Accounts:</strong> You can use all features of the app without registration. We do not collect names, emails, or phone numbers.</li>
+            </ul>
+        </div>
+
+        <h3>Diagnostics & Analytics</h3>
+        <p>To maintain a high-fidelity "1/1000" user experience and ensure the app remains stable across various hardware, we use two privacy-conscious third-party services:</p>
+        
+        <ul>
+            <li><strong>Sentry (Stability):</strong> Used to capture anonymous technical crash reports to fix bugs quickly.</li>
+            <li><strong>TelemetryDeck (Usage Patterns):</strong> Collects <strong>fully anonymous</strong> usage patterns. It does not collect IP addresses or any Personally Identifiable Information (PII), and we do not use any cross-app tracking.</li>
+        </ul>
+    </section>
+
+    <section id="terms">
+        <h2>2. Terms of Service</h2>
+
+        <h3>1. Description of Service</h3>
+        <p><strong>a Pea</strong> provides a rhythmic task management and focus environment. It is a productivity tool designed to help users manage executive function through sensory-friendly interactions.</p>
+
+        <h3>2. Not Medical Advice (Important)</h3>
+        <p><strong>a Pea</strong> is a productivity and mindfulness tool. It is <strong>NOT</strong> a medical device. The features provided are intended for focus assistance and <strong>do not constitute medical advice, diagnosis, or treatment</strong>. Always seek the advice of a qualified health provider for medical conditions.</p>
+
+        <h3>3. User Responsibility</h3>
+        <p>As a local-first application, the safety of your data resides on your device. The developer is not responsible for data loss resulting from device theft, hardware failure, or manual uninstallation.</p>
+
+        <h3>4. Intellectual Property</h3>
+        <p>The unique "Pea Peeling" interaction, animations, and visual assets are the intellectual property of the developer. Any unauthorized reproduction is prohibited.</p>
+    </section>
+
+    <section id="contact">
+        <h2>3. Contact</h2>
+        <p>For any inquiries regarding these terms, please contact us at:</p>
+        <p><a href="mailto:leege100@gmail.com" class="contact-link">leege100@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 A Pea. Crafted with care for every sensitive soul.</p>
+    </footer>
+</div>
+
+</body>
+</html>
