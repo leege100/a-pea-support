@@ -1,199 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-Hans">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Information | a Pea</title>
-    <style>
-        :root {
-            --brand-color: #5EA74D;
-            --text-main: #1d1d1f;
-            --text-sec: #424245;
-            --bg-color: #ffffff;
-            --card-bg: #f5f5f7;
-            --line-color: #d2d2d7;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --text-main: #f5f5f7;
-                --text-sec: #a1a1a6;
-                --bg-color: #000000;
-                --card-bg: #1c1c1e;
-                --line-color: #38383a;
-            }
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 80px 24px;
-        }
-
-        header {
-            margin-bottom: 60px;
-            text-align: center;
-        }
-
-        .app-name {
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--brand-color);
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        h1 {
-            font-size: 40px;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin: 0;
-        }
-
-        .last-updated {
-            font-size: 14px;
-            color: var(--text-sec);
-            margin-top: 12px;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-top: 60px;
-            margin-bottom: 24px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid var(--line-color);
-        }
-
-        h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 12px;
-        }
-
-        p, li {
-            font-size: 16px;
-            color: var(--text-sec);
-            margin-bottom: 16px;
-        }
-
-        ul {
-            padding-left: 20px;
-            margin-bottom: 24px;
-        }
-
-        li {
-            margin-bottom: 12px;
-        }
-
-        strong {
-            color: var(--text-main);
-        }
-
-        .highlight-box {
-            background-color: var(--card-bg);
-            padding: 24px;
-            border-radius: 12px;
-            margin: 24px 0;
-        }
-
-        .contact-link {
-            color: var(--brand-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-link:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid var(--line-color);
-            text-align: center;
-            font-size: 13px;
-            color: var(--text-sec);
-        }
-
-        @media (max-width: 480px) {
-            h1 { font-size: 32px; }
-            .container { padding: 40px 20px; }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一粒 Pea，纯粹的专注。了解专注记录、时长偏好、实时活动和使用分析的数据处理方式，以及应用使用条款。">
+  <title>一粒 Pea · 隐私政策与使用条款 / Privacy &amp; Terms</title>
+  <style>
+    :root { color-scheme: light; --ink: #234f36; --muted: #60705b; --cream: #f4f8e8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #e7efd9; color: var(--ink); font: 16px/1.8 system-ui, sans-serif; }
+    main { max-width: 760px; margin: auto; padding: 48px 24px; }
+    header { padding: 24px 0 32px; }
+    h1 { font-size: 38px; line-height: 1.3; margin: 0; }
+    h2 { font-size: 24px; line-height: 1.4; }
+    h3 { font-size: 18px; margin-top: 28px; }
+    section { background: var(--cream); padding: 28px; border-radius: 28px; margin: 20px 0; }
+    a { color: var(--ink); text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+    p { margin: 12px 0; }
+    small, .tagline { color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; }
+    footer { padding: 24px 0; color: var(--muted); }
+    @media (max-width: 480px) {
+      main { padding: 24px 16px; }
+      section { padding: 24px 20px; border-radius: 24px; }
+      h1 { font-size: 32px; }
+    }
+  </style>
 </head>
 <body>
+<main>
+  <header>
+    <h1>一粒 <span lang="en">Pea</span></h1>
+    <p class="tagline">纯粹的专注 · <span lang="en">Simply focus.</span></p>
+    <p>隐私政策与使用条款 · <span lang="en">Privacy &amp; Terms</span></p>
+    <small>更新于 / Updated: <time datetime="2026-10-28">2026-10-28</time></small>
+    <nav aria-label="语言 / Language">
+      <a href="#zh" lang="zh-Hans">简体中文</a>
+      <a href="#en" lang="en">English</a>
+    </nav>
+  </header>
 
-<div class="container">
-    <header>
-        <span class="app-name">a Pea</span>
-        <h1>Legal Information</h1>
-        <p class="last-updated">Last Updated: March 31, 2026</p>
-    </header>
+  <section id="zh" lang="zh-Hans" aria-label="简体中文隐私政策与使用条款">
+    <p>一粒（Pea）是一款专注计时工具。选择一段时间，开始专注，需要时暂停或继续，并查看已完成的专注记录。以下说明适用于当前版本的一粒。</p>
 
-    <section id="privacy">
-        <h2>1. Privacy Policy</h2>
-        
-        <h3>Our Philosophy: Privacy by Design</h3>
-        <p><strong>a Pea</strong> is built on a "Privacy-First" foundation. We believe your tasks, thoughts, and focus habits are sacred. We do not want, and technically cannot access, your personal information.</p>
+    <h2>隐私政策</h2>
+    <h3>1. 专注记录与时长偏好</h3>
+    <p>一粒在你的设备上保存所选时长、当前计时状态（包括剩余时间或截止时间）、已完成专注的时长与完成时间，以及累计次数和累计时长。这些数据用于记住你的时长偏好、恢复计时，以及展示最近 7、15 或 30 天的专注统计。</p>
+    <p>专注计时和查看本地记录无需联网，也无需注册账号。一粒不将这些专注记录上传至开发者服务器或使用分析服务，当前不提供账号云同步。</p>
 
-        <div class="highlight-box">
-            <h3>Data Storage & Collection</h3>
-            <ul>
-                <li><strong>Local-Only Storage:</strong> All task content, "Pea" progress, and focus logs are stored <strong>strictly on your local device</strong>.</li>
-                <li><strong>No Cloud Databases:</strong> We do not use any cloud services (such as Firebase or Supabase) to sync, store, or backup your personal data.</li>
-                <li><strong>No Accounts:</strong> You can use all features of the app without registration. We do not collect names, emails, or phone numbers.</li>
-            </ul>
-        </div>
+    <h3>2. 实时活动（Live Activity）</h3>
+    <p>在支持的 iPhone 和系统设置允许的情况下，一粒会通过实时活动在锁定屏幕和灵动岛展示当前专注的计时与状态，并提供暂停和继续操作。应用将当前会话所需的计时信息交给设备上的系统组件处理，不使用开发者服务器推送实时活动更新。</p>
+    <p>能够查看你设备屏幕的人也可能看到这些信息。你可以在系统设置中管理一粒的实时活动；关闭实时活动不影响应用内计时和本地记录。</p>
 
-        <h3>Diagnostics & Analytics</h3>
-        <p>To maintain a high-fidelity "1/1000" user experience and ensure the app remains stable across various hardware, we use two privacy-conscious third-party services:</p>
-        
-        <ul>
-            <li><strong>Sentry (Stability):</strong> Used to capture anonymous technical crash reports to fix bugs quickly.</li>
-            <li><strong>TelemetryDeck (Usage Patterns):</strong> Collects <strong>fully anonymous</strong> usage patterns. It does not collect IP addresses or any Personally Identifiable Information (PII), and we do not use any cross-app tracking.</li>
-        </ul>
-    </section>
+    <h3>3. 使用情况分析</h3>
+    <p>一粒使用 TelemetryDeck 了解应用启动、页面导航、统计与反馈入口点击等功能的使用情况，帮助改进产品。应用会发送本机随机生成并保存的安装标识、应用运行会话标识、事件名称、事件时间，以及相关页面名称、导航动作或入口来源。</p>
+    <p>这些标识不是你的姓名、邮箱或广告标识符，但可以用于区分安装和关联使用事件，因此不应理解为完全不收集数据。分析事件不包含你的专注完成记录、所选时长、单次专注时长或统计历史。一粒不使用广告追踪或跨 App 追踪。</p>
+    <p>分析请求通过 HTTPS 发送；服务方会处理接收网络请求所需的信息。有关服务方的数据处理，请参阅 <a href="https://telemetrydeck.com/privacy/">TelemetryDeck 隐私政策</a>。当前版本未提供应用内的使用分析关闭开关。</p>
 
-    <section id="terms">
-        <h2>2. Terms of Service</h2>
+    <h3>4. 邮件反馈</h3>
+    <p>反馈入口会打开邮件应用。只有你主动发送邮件后，开发者才会收到你的邮件地址、邮件内容及你自行添加的附件。反馈用于回复和处理你的问题；一粒不会自动将专注记录附加到反馈邮件。</p>
 
-        <h3>1. Description of Service</h3>
-        <p><strong>a Pea</strong> provides a rhythmic task management and focus environment. It is a productivity tool designed to help users manage executive function through sensory-friendly interactions.</p>
+    <h3>5. 数据保存与管理</h3>
+    <p>本地专注数据会随应用数据保留。你可以通过系统提供的删除应用及其数据功能移除本地数据；仅卸载应用但保留文稿与数据的操作可能不会移除记录。设备系统备份也可能包含本地数据，是否备份、恢复或删除备份取决于你的系统设置。</p>
+    <p>删除本地数据不会自动删除已经发送的分析事件或反馈邮件。如需咨询相关数据的处理，或请求访问、更正、删除你提供的信息，请通过下方邮箱联系开发者。由于专注记录仅保存在你的设备上，开发者无法远程读取或恢复这些记录。</p>
 
-        <h3>2. Not Medical Advice (Important)</h3>
-        <p><strong>a Pea</strong> is a productivity and mindfulness tool. It is <strong>NOT</strong> a medical device. The features provided are intended for focus assistance and <strong>do not constitute medical advice, diagnosis, or treatment</strong>. Always seek the advice of a qualified health provider for medical conditions.</p>
+    <h3>6. 设备功能</h3>
+    <p>一粒使用本地存储、系统计时和实时活动等设备功能来保存记录、恢复会话和展示状态。文件元数据和系统启动时间不用于广告追踪或设备指纹识别。</p>
 
-        <h3>3. User Responsibility</h3>
-        <p>As a local-first application, the safety of your data resides on your device. The developer is not responsible for data loss resulting from device theft, hardware failure, or manual uninstallation.</p>
+    <h2>使用条款</h2>
+    <h3>专注与记录</h3>
+    <p>一粒帮助你为一件事留出专注时间。你可以自行选择时长，并随时暂停、继续或取消。只有完成的专注会计入完成统计；在完成前取消，不计入完成次数和累计专注时长。</p>
 
-        <h3>4. Intellectual Property</h3>
-        <p>The unique "Pea Peeling" interaction, animations, and visual assets are the intellectual property of the developer. Any unauthorized reproduction is prohibited.</p>
-    </section>
+    <h3>计时与系统限制</h3>
+    <p>计时恢复依据设备上保存的会话状态与截止时间。系统挂起应用时，完成记录可能需要在应用恢复运行后结算。实时活动的显示、更新和交互受设备、系统版本及设置影响，不能保证始终显示或即时刷新。</p>
+    <p>当前版本没有独立的后台到时通知或闹钟功能。实时活动中的倒计时与完成展示不等同于到时提醒，请不要将其作为必须准时提醒的唯一依据。删除应用、设备故障或备份不可用可能导致本地记录丢失。</p>
 
-    <section id="contact">
-        <h2>3. Contact</h2>
-        <p>For any inquiries regarding these terms, please contact us at:</p>
-        <p><a href="mailto:leege100@gmail.com" class="contact-link">leege100@gmail.com</a></p>
-    </section>
+    <h3>使用范围与权利</h3>
+    <p>一粒是日常生产力工具，不提供医疗诊断或治疗，也不保证特定的学习、工作或专注结果。请根据自己的需要安排专注与休息。</p>
+    <p>应用的原创代码、设计和资源归其权利人所有，第三方组件按各自许可使用。本条款不限制你依法享有的权利。</p>
 
-    <footer>
-        <p>© 2026 A Pea. Crafted with care for every sensitive soul.</p>
-    </footer>
-</div>
+    <h3>更新与联系</h3>
+    <p>功能或数据处理方式变化时，我们会相应更新本页面，并注明更新日期。如对本政策、使用条款或个人信息处理有疑问，请联系一粒开发者：<a href="mailto:leege100@gmail.com">leege100@gmail.com</a>。</p>
+  </section>
 
+  <section id="en" lang="en" aria-label="Privacy Policy and Terms of Use in English">
+    <p>Pea (一粒) is a focus timer. Choose a duration, start focusing, pause or resume when needed, and review your completed sessions. The following information applies to the current version of Pea.</p>
+
+    <h2>Privacy Policy</h2>
+    <h3>1. Focus records and duration preferences</h3>
+    <p>Pea stores your selected duration, current timer state (including remaining time or a deadline), completed session durations and completion times, and cumulative session counts and duration on your device. This data remembers your duration preference, restores your timer, and shows focus statistics for the last 7, 15 or 30 days.</p>
+    <p>The focus timer and local records work without an internet connection or an account. Pea does not upload these focus records to developer-operated servers or the analytics service. Account-based cloud synchronization is not currently available.</p>
+
+    <h3>2. Live Activities</h3>
+    <p>On supported iPhones, when permitted by system settings, Pea uses a Live Activity to display the current timer and focus status on the Lock Screen and Dynamic Island, with pause and resume controls. Pea shares the timing information needed for the current session with on-device system components. It does not use a developer-operated server to push Live Activity updates.</p>
+    <p>Anyone who can see your device screen may also see this information. You can manage Pea’s Live Activities in system settings. Turning them off does not affect the in-app timer or local records.</p>
+
+    <h3>3. Usage analytics</h3>
+    <p>Pea uses TelemetryDeck to understand usage such as app launches, screen navigation, and statistics and feedback button clicks, helping improve the product. The app sends a randomly generated installation identifier stored on your device, an app-run session identifier, event names, timestamps, and relevant screen names, navigation actions or entry sources.</p>
+    <p>These identifiers are not your name, email address or advertising identifier, but they can distinguish installations and associate usage events. They should therefore not be understood as collecting no data. Analytics events do not include your completed focus records, selected duration, individual session durations or statistics history. Pea does not use advertising tracking or cross-app tracking.</p>
+    <p>Analytics requests are sent over HTTPS. The provider processes information necessary to receive network requests. Please see <a href="https://telemetrydeck.com/privacy/">TelemetryDeck’s privacy policy</a> for its data handling. The current version does not provide an in-app switch to disable usage analytics.</p>
+
+    <h3>4. Email feedback</h3>
+    <p>The feedback button opens an email app. The developer receives your email address, message and any attachments you add only if you choose to send the email. Feedback is used to respond to and address your request. Pea does not automatically attach focus records to feedback emails.</p>
+
+    <h3>5. Data storage and management</h3>
+    <p>Local focus data remains with the app’s data. You can remove it using your operating system’s option to delete the app and its data. Offloading an app while retaining its documents and data may leave your records in place. System backups may also contain local data; backup, restoration and backup deletion depend on your system settings.</p>
+    <p>Deleting local data does not automatically delete analytics events or feedback emails already sent. For questions about that data, or requests to access, correct or delete information you have provided, contact the developer at the email address below. Because focus records are stored only on your device, the developer cannot remotely access or recover them.</p>
+
+    <h3>6. Device features</h3>
+    <p>Pea uses local storage, system timing and Live Activities to save records, restore sessions and display their status. File metadata and system boot time are not used for advertising tracking or device fingerprinting.</p>
+
+    <h2>Terms of Use</h2>
+    <h3>Focus sessions and records</h3>
+    <p>Pea helps you set aside time for one thing. You choose the duration and can pause, resume or cancel a session. Only completed sessions count toward completion statistics. Cancelling before completion does not add to your completed session count or cumulative focus duration.</p>
+
+    <h3>Timing and system limits</h3>
+    <p>Timer restoration uses the session state and deadline saved on your device. When the system suspends the app, a completed session may be recorded when the app resumes running. Live Activity display, updates and interactions depend on your device, operating system version and settings. Continuous display and immediate updates cannot be guaranteed.</p>
+    <p>The current version has no separate background completion notification or alarm feature. A Live Activity countdown or completion display is not an alert; do not rely on it as your sole reminder for time-critical tasks. Deleting the app, device failure or unavailable backups may result in lost local records.</p>
+
+    <h3>Use and rights</h3>
+    <p>Pea is an everyday productivity tool. It does not provide medical diagnosis or treatment or guarantee particular learning, work or focus outcomes. Arrange focus time and breaks according to your needs.</p>
+    <p>Original app code, design and assets belong to their respective rights holders. Third-party components remain subject to their licenses. These terms do not limit your statutory rights.</p>
+
+    <h3>Updates and contact</h3>
+    <p>We will update this page as features or data practices change and show the revision date above. For questions about this policy, these terms or the handling of personal information, contact Pea’s developer at <a href="mailto:leege100@gmail.com">leege100@gmail.com</a>.</p>
+  </section>
+
+  <footer>© 2026 一粒 Pea · <span lang="en">One thing at a time.</span></footer>
+</main>
 </body>
 </html>
